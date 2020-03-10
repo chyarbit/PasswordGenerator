@@ -25,7 +25,8 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <!--onclick hardcodes the click into the HTML rather than using the event listener in Javascript.  Doing this also means that it can be called on at any point rather than at the end since the Javascript script is at the bottom of the HTML file-->
+          <button id="generate" onclick="generate()" class="btn">Generate Password</button>
         </div>
       </div>
     </div>
